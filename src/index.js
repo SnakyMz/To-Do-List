@@ -19,7 +19,7 @@ function displayList() {
         activity.className = 'activity';
         activity.innerHTML = `
         <div class="actDetail">
-                    <input type="checkbox" id="${object.index}">
+                    <input type="checkbox" id="${object.index}" class="checkings">
                     <label for="${object.index}">${object.description}</label>
                 </div>
                 <img src="../images/icons8-three-dots-50.png" alt="Option" class="icons optionBtn">
