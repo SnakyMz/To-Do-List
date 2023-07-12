@@ -125,6 +125,7 @@ If you like this project and wish to collaborate. Please contact me.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Inspired by the [Minimalist by @mshwery](https://web.archive.org/web/20180320194056/http://www.getminimalist.com:80/).
+- Checkout [Icons8](https://icons8.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
