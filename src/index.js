@@ -1,3 +1,8 @@
+import './style.css';
+import updateRotation from './assets/updateRotation.png'
+import downLeft from './assets/downLeft.png'
+import threeDots from './assets/threeDots.png'
+
 const listArray = [
     {
         description: "Morning Meeting",
@@ -22,7 +27,7 @@ function displayList() {
                     <input type="checkbox" id="${object.index}" class="checkings">
                     <label for="${object.index}">${object.description}</label>
                 </div>
-                <img src="../images/icons8-three-dots-50.png" alt="Option" class="icons optionBtn">
+                <img src="./images/threeDots.png" alt="Option" class="icons optionBtn">
         `;
         list.appendChild(activity);
     });

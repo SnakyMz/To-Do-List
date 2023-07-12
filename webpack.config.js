@@ -6,6 +6,9 @@ module.exports = {
     entry: {
         index: './src/index.js',
     },
+    devServer: {
+        static: './dist',
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
@@ -15,12 +18,17 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+        assetModuleFilename: 'images/[name][ext]',
     },
     module: {
         rules: [
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.png/,
+                type: 'asset/resource',
             },
         ],
     },
