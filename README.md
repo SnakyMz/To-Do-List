@@ -27,7 +27,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 Gamecon <a name="about-project"></a>
+# 📖 About the Project <a name="about-project"></a>
 
 **To Do List** is a virtual notepad that keeps track of activities.
 
