@@ -15,8 +15,15 @@ export default class ToDos {
             checkings.type = 'checkbox';
             checkings.className = 'checkings';
             actDetail.appendChild(checkings);
-            const desc = document.createElement('label');
-            desc.innerHTML = `${object.description}`;
+            const desc = document.createElement('input');
+            desc.type = 'text';
+            desc.className = 'desc';
+            desc.value = `${object.description}`;
+            desc.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter' && desc.value) {
+                    this.updateAct(desc.value, (index));
+                }
+            });
             actDetail.appendChild(desc);
             activity.appendChild(actDetail);
             const removeBtn = document.createElement('img');
@@ -37,6 +44,12 @@ export default class ToDos {
         arrayObject.completed = false;
         arrayObject.index = (this.listArray.length + 1);
         this.listArray.push(arrayObject);
+        localStorage.setItem('activities', JSON.stringify(this.listArray));
+        this.displayList();
+    }
+
+    updateAct = (value, index) => {
+        this.listArray[index].description = value;
         localStorage.setItem('activities', JSON.stringify(this.listArray));
         this.displayList();
     }
