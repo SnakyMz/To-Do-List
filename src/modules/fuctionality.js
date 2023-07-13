@@ -1,4 +1,6 @@
-import changeAct from "./status";
+import Status from './status.js';
+
+const status = new Status();
 
 export default class ToDos {
   constructor() {
@@ -21,8 +23,9 @@ export default class ToDos {
       checkings.ariaLabel = 'Checkbox';
       checkings.className = 'checkings';
       checkings.checked = object.completed;
+      // To locally store checked activities status
       checkings.addEventListener('change', () => {
-        changeAct(this.listArray, index);
+        status.changeAct(this.listArray, index);
       });
       actDetail.appendChild(checkings);
 
