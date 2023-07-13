@@ -1,38 +1,35 @@
 import './style.css';
 import './assets/updateRotation.png';
 import './assets/downLeft.png';
-import './assets/threeDots.png';
+import './assets/delete.png';
+import ToDos from './modules/fuctionality.js';
 
-const listArray = [
-  {
-    description: 'Morning Meeting',
-    completed: true,
-    index: 0,
-  },
-  {
-    description: 'List project',
-    completed: false,
-    index: 1,
-  },
-];
+const actList = new ToDos();
 
-const list = document.querySelector('#list');
+const updateBtn = document.querySelector('.updateBtn');
+const addBtn = document.querySelector('.addBtn');
+const addText = document.querySelector('.addText');
 
-function displayList() {
-  listArray.forEach((object) => {
-    const activity = document.createElement('li');
-    activity.className = 'activity';
-    activity.innerHTML = `
-        <div class="actDetail">
-                    <input type="checkbox" id="${object.index}" class="checkings">
-                    <label for="${object.index}">${object.description}</label>
-                </div>
-                <img src="./images/threeDots.png" alt="Option" class="icons optionBtn">
-        `;
-    list.appendChild(activity);
-  });
-}
+// Reload List
+updateBtn.onclick = () => {
+  document.location.reload();
+};
 
+// Activity adding function using button click
+addBtn.onclick = () => {
+  actList.addAct(addText.value);
+  addText.value = '';
+};
+
+// Activity adding fuction using enter key
+addText.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter' && addText.value) {
+    actList.addAct(addText.value);
+    addText.value = '';
+  }
+});
+
+// Initiating DOM on load
 window.onload = () => {
-  displayList();
+  actList.displayList();
 };
