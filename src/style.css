@@ -19,6 +19,7 @@ body {
 
 .icons {
   height: 1rem;
+  cursor: pointer;
 }
 
 .heading {
@@ -47,6 +48,7 @@ h1 {
   font-style: italic;
   font-size: 1rem;
   padding: 1rem;
+  width: 95%;
 }
 
 .addBtn {
@@ -76,6 +78,7 @@ input.checkings {
 }
 
 #clearBtn {
+  cursor: pointer;
   border: none;
   background-color: #f1f1f1;
   color: darkgray;
