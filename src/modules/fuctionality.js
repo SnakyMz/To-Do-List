@@ -16,11 +16,13 @@ export default class ToDos {
 
         const checkings = document.createElement('input');
         checkings.type = 'checkbox';
+        checkings.ariaLabel = 'Checkbox';
         checkings.className = 'checkings';
         actDetail.appendChild(checkings);
 
         const desc = document.createElement('input');
         desc.type = 'text';
+        desc.ariaLabel = 'Description';
         desc.className = 'desc';
         desc.value = `${object.description}`;
         // To Update edited value initiated using enter key
