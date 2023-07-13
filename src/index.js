@@ -10,15 +10,18 @@ const updateBtn = document.querySelector('.updateBtn');
 const addBtn = document.querySelector('.addBtn');
 const addText = document.querySelector('.addText');
 
+// Reload List
 updateBtn.onclick = () => {
   document.location.reload();
 };
 
+// Activity adding function using button click
 addBtn.onclick = () => {
   actList.addAct(addText.value);
   addText.value = '';
 };
 
+// Activity adding fuction using enter key
 addText.addEventListener('keypress', (event) => {
   if (event.key === 'Enter' && addText.value) {
     actList.addAct(addText.value);
@@ -26,6 +29,7 @@ addText.addEventListener('keypress', (event) => {
   }
 });
 
+// Initiating DOM on load
 window.onload = () => {
   actList.displayList();
 };
