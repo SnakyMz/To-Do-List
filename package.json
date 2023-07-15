@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://snakymz.github.io/To-Do-List",
+  "homepage": "https://snakymz.github.io/To-Do-List/dist",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
