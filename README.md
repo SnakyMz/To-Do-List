@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon]()
+- [Live Link](https://snakymz.github.io/To-Do-List/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
