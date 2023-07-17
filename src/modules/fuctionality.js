@@ -44,7 +44,7 @@ export default class ToDos {
       activity.appendChild(actDetail);
 
       const removeBtn = document.createElement('img');
-      removeBtn.src = '/images/delete.png';
+      removeBtn.src = './images/delete.png';
       removeBtn.alt = 'Delete';
       removeBtn.className = 'icons removeBtn';
       // To remove an activity from list by delete button
