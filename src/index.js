@@ -2,7 +2,7 @@ import './style.css';
 import './assets/updateRotation.png';
 import './assets/downLeft.png';
 import './assets/delete.png';
-import ToDos from './modules/fuctionality.js';
+import ToDos from './modules/functionality.js';
 import Status from './modules/status.js';
 
 const actList = new ToDos();
