@@ -22,4 +22,13 @@ export default class ToDos {
         localStorage.setItem('activities', JSON.stringify(this.listArray));
         this.displayList();
     }
+    
+    removeAct = (value) => {
+        this.listArray = this.listArray.filter((object) => object.index !== value);
+        this.listArray.forEach((object, index) => {
+            object.index = (index + 1);
+        });
+        localStorage.setItem('activities', JSON.stringify(this.listArray));
+        this.displayList();
+    }
 }

@@ -15,3 +15,16 @@ describe('addTask', () => {
         expect(ul.childNodes).toHaveLength(1);
     });
 });
+
+describe('removeTask', () => {
+    test('should remove a task from the todoList array', () => {
+        const ul = document.querySelector('#testList');
+        act.removeAct(1);
+        expect(ul.childNodes).toHaveLength(0);
+    });
+});
+
+
+
+
+
