@@ -99,6 +99,11 @@ You can deploy this project using:
 - Twitter: [@SobanSyeed](https://twitter.com/SobanSyeed)
 - LinkedIn: [Soban Syeed](https://www.linkedin.com/in/soban-syeed-82985b241/)
 
+👤 **Javier Aybar**
+
+- GitHub: [@JavierAybar](https://github.com/JavierAybar)
+- LinkedIn: [@JavierAybar](https://www.linkedin.com/in/javier-aybar-932376274/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
