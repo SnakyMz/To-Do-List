@@ -1,8 +1,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./images/logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
   <h3><b>To Do List</b></h3>
 
@@ -18,6 +16,9 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -76,6 +77,32 @@ Clone this repository to your desired folder:
 ```sh
   cd project-folder
   git clone https://github.com/SnakyMz/To-Do-List.git
+```
+
+### Install
+
+Install this project with webpack:
+
+```sh
+  cd project-folder
+  npm run build
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+
+```sh
+  npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  npm run test
 ```
 
 ### Deployment
