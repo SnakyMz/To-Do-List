@@ -1,4 +1,5 @@
 import ToDos from './functionality.js';
+import Status from './status.js';
 
 jest.mock('./functionality.js');
 const act = new ToDos();
