@@ -33,3 +33,22 @@ describe('updateTask', () => {
     expect(ul.firstChild.textContent).toBe('evening');
   });
 });
+
+jest.mock('./status.js');
+const stat = new Status();
+
+describe('changeAct', () => {
+  test('should change completed status', () => {
+    stat.changeAct(act.listArray, 0);
+    expect(act.listArray[0].completed).toBeTruthy();
+  });
+});
+
+describe('clearList', () => {
+  test('should delete completed task', () => {
+    const ul = document.querySelector('#testList');
+    stat.clearList(act.listArray);
+    act.displayList();
+    expect(ul.childNodes).toHaveLength(0);
+  });
+});

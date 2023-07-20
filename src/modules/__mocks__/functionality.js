@@ -4,6 +4,7 @@ export default class ToDos {
   }
 
   displayList = () => {
+    this.listArray = JSON.parse(localStorage.getItem('activities'));
     const testList = document.querySelector('#testList');
     testList.innerHTML = '';
     this.listArray.forEach((object) => {
