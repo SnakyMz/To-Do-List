@@ -12,7 +12,8 @@ describe('addTask', () => {
     `;
     const ul = document.querySelector('#testList');
     act.addAct('Morning');
-    expect(ul.childNodes).toHaveLength(1);
+    act.addAct('afternoon');
+    expect(ul.childNodes).toHaveLength(2);
   });
 });
 
@@ -21,6 +22,14 @@ describe('removeTask', () => {
   test('should remove a task from the todoList array', () => {
     const ul = document.querySelector('#testList');
     act.removeAct(1);
-    expect(ul.childNodes).toHaveLength(0);
+    expect(ul.childNodes).toHaveLength(1);
+  });
+});
+
+describe('updateTask', () => {
+  test('should change given task description', () => {
+    const ul = document.querySelector('#testList');
+    act.updateAct('evening', 0);
+    expect(ul.firstChild.textContent).toBe('evening');
   });
 });
