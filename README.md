@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
-<img src="./logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
 <div align="center">
+  <img src="./logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
   <h3><b>To Do List</b></h3>
 
